@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+#plateau {
+    width: 90%;
+    background-color: #d7a27b;
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    justify-self: center;
+    flex-direction: row-reverse;
+}
+
+img {
+    width: 15rem;
+    border: 1px solid gold;
+    margin: 5px;
+}
+
+#zoneDuMot {
+    width: 80%;
+    height: 30vh;
+    border: 1px solid black;
+    margin: 10px;
+    box-shadow: 0 0 20px 2px gold;
+    border-radius: 10px;
+}
+
+#mot {
+    width: 40%;
+    height: auto;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 2px 2px;
+    text-align: center;
+    margin: 20px auto auto;
+}
+
+#lab {
+    padding: 150px;
+    color: #5b5a5a;
+}
+input {
+    margin-left: 170px;
+    margin-top: 10px;
+    text-align: center;
+}
+span {
+    color: dimgrey;
+    margin-left: 20px;
+}
+#proposition {
+    width: 60%;
+    min-height: 10vh;
+    border: 1px dashed #a52a2a;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #d6b2a2;
+
+}
+a {
+    margin-left: 380px;
+    color: darkmagenta;
+    text-decoration: none;
+    border: 1px solid #985798;
+    border-radius: 5px;
+    padding: 1px 1px;
+
+
+}
+
+
