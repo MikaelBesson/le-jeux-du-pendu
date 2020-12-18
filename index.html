@@ -9,27 +9,24 @@
 
 </head>
 <body>
-    <h1>Jeu du pendu</h1>
-    <div id="plateau">
-        <div id=zoneDuMot>
-            <div id="mot">mot a trouver</div>
-            <label id="lab" for="input">entrez une lettre ou le mot que vous pensez</label><br>
-            <input type="text" name="input" placeholder="votre proposition"><br>
-            <span> lettre et mot deja proposer</span>
-            <div id="proposition"></div> <a class="lien" href="index.html">Nouvelle partie</a>
-
-
-        </div>
-
-         <img src="images/Screenshot_1.jpg" alt="potence">
-
+<h1>Jeu du pendu</h1>
+<div id="plateau">
+    <div id=zoneDuMot>
+        <div id="mot"></div>
+        <form action="#">
+            <input type="text" name="input" placeholder="votre proposition">
+            <button type="button">tester</button>
+        </form>
+        <div id="message"></div>
+        <div id="proposition"></div>
+        <a class="lien" href="index.html">Nouvelle partie</a>
     </div>
 
+    <img src="images/Screenshot_1.jpg" alt="potence">
+
+</div>
 
 
-
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@ body {
 }
 #plateau {
     width: 90%;
+    height: 40vh;
     background-color: #d7a27b;
     border: 1px solid black;
     display: flex;
@@ -22,7 +23,7 @@ body {
 h1 {
     text-align: center;
     justify-self: center;
-    flex-direction: row-reverse;
+
 }
 
 img {
@@ -33,7 +34,7 @@ img {
 
 #zoneDuMot {
     width: 80%;
-    height: 30vh;
+    height: 35vh;
     border: 1px solid black;
     margin: 10px;
     box-shadow: 0 0 20px 2px gold;
@@ -51,37 +52,37 @@ img {
     margin: 20px auto auto;
 }
 
-#lab {
-    padding: 150px;
-    color: #5b5a5a;
-}
 input {
-    margin-left: 170px;
-    margin-top: 10px;
+    margin-left: 35%;
+    margin-top: 5px;
     text-align: center;
 }
-span {
-    color: dimgrey;
-    margin-left: 20px;
-}
+
 #proposition {
     width: 60%;
     min-height: 10vh;
     border: 1px dashed #a52a2a;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 30px;
     background-color: #d6b2a2;
 
 }
 a {
-    margin-left: 380px;
+    margin-left: 80%;
     color: darkmagenta;
     text-decoration: none;
     border: 1px solid #985798;
     border-radius: 5px;
     padding: 1px 1px;
-
-
+}
+#message {
+    width: 20%;
+    height: 5vh;
+    color: #e93c3c;
+    top: 28px;
+    margin-left: 75%;
+    position: relative;
+    font-size: large;
 }
 
 
