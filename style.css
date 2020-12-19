@@ -26,7 +26,7 @@ h1 {
 
 }
 
-img {
+#img {
     width: 15rem;
     border: 1px solid gold;
     margin: 5px;
@@ -41,15 +41,16 @@ img {
     border-radius: 10px;
 }
 
-#mot {
+#guessWord {
     width: 40%;
-    height: auto;
+    height: 30px;
     border: 1px solid gray;
     background-color: whitesmoke;
     border-radius: 5px;
     padding: 2px 2px;
     text-align: center;
     margin: 20px auto auto;
+    font-size: medium;
 }
 
 input {
@@ -65,8 +66,9 @@ input {
     border-radius: 5px;
     margin-left: 30px;
     background-color: #d6b2a2;
-
+    margin-top: -21px;
 }
+
 a {
     margin-left: 80%;
     color: darkmagenta;
@@ -75,14 +77,25 @@ a {
     border-radius: 5px;
     padding: 1px 1px;
 }
+
 #message {
     width: 20%;
     height: 5vh;
-    color: #e93c3c;
     top: 28px;
     margin-left: 75%;
     position: relative;
-    font-size: large;
+    font-size: medium;
+}
+
+#essai {
+    width: 20%;
+    height: 5vh;
+    color: black;
+    top: 28px;
+    position: relative;
+    font-size: 15px;
+    margin-top: -3px;
+    margin-left: 75%;
 }
 
 
