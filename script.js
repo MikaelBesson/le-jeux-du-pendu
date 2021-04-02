@@ -5,6 +5,8 @@ let mots = [
     "formation", "informatique", "fauteuil", "escalier", "telephone", "pomme", "furet", "chat",
     "chien", "poule", "couverture", "cigarette", "souris", "ecran", "figurine", "boite", "nuages",
     "console", "casque", "balance",];
+//mes variables
+
 let input = document.getElementById("input");
 let buttonVerify = document.getElementById("letterTry");
 let divEssai = document.getElementById("essai");
@@ -17,19 +19,24 @@ let messageJoueur = document.getElementById("message");
 let img = document.getElementById('img');
 img.src = "images/imgPrincipal.jpg";
 
+// affichage du nombre d'essais restant
+
 divEssai.innerHTML = "essais restant " + essais;
-console.log(motRandom);
+
+// choix aleatoire d'un mot dans le tableaux
 
 for (let i = 0; i < motRandom.length; i++) {
     answerTableau[i] = "_";
     guessWord.innerHTML = answerTableau.join(" ");
 }
+ // lettre jouer et affichage des lettres deja jouer
 
 buttonVerify.addEventListener("click", function () {
     let letter = input.value;
     let found = true;
-    historique.innerHTML += "deja jouer : "+letter+ " / ";
+    historique.innerHTML += letter+ " / ";
 
+    // verification de la lettre jouer et affichage du resultat
 
     for (let i = 0; i < motRandom.length; i++) {
         if (motRandom[i] === letter) {
@@ -43,7 +50,7 @@ buttonVerify.addEventListener("click", function () {
     if (!found) {
         essais--;
         divEssai.innerHTML = "essais restant " + essais;
-        img.src += 'images/img'+ essais +'.jpg';
+        img.src = 'images/img'+ essais +'.jpg';
     }
     if (essais <= 0) {
         messageJoueur.innerHTML ="Perdu";
