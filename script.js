@@ -5,7 +5,9 @@ let mots = [
     "formation", "informatique", "fauteuil", "escalier", "telephone", "pomme", "furet", "chat",
     "chien", "poule", "couverture", "cigarette", "souris", "ecran", "figurine", "boite", "nuages",
     "console", "casque", "balance",];
+
 //mes variables
+//my variables
 
 let input = document.getElementById("input");
 let buttonVerify = document.getElementById("letterTry");
@@ -20,6 +22,7 @@ let img = document.getElementById('img');
 img.src = "images/imgPrincipal.jpg";
 
 // affichage du nombre d'essais restant
+// display of the number of trials remaining
 
 divEssai.innerHTML = "essais restant " + essais;
 
@@ -30,6 +33,7 @@ for (let i = 0; i < motRandom.length; i++) {
     guessWord.innerHTML = answerTableau.join(" ");
 }
  // lettre jouer et affichage des lettres deja jouer
+// letter play and display of letters already play
 
 buttonVerify.addEventListener("click", function () {
     let letter = input.value;
@@ -37,6 +41,7 @@ buttonVerify.addEventListener("click", function () {
     historique.innerHTML += letter+ " / ";
 
     // verification de la lettre jouer et affichage du resultat
+    // check the letter play and display the result
 
     for (let i = 0; i < motRandom.length; i++) {
         if (motRandom[i] === letter) {
